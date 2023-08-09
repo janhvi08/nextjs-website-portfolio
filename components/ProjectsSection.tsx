@@ -6,27 +6,27 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Movie review app",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Movie Review App helps us to rate movies and edit or delete the review whenever necessary",
+    image: "/movie.png",
+    github: "https://github.com/janhvi08/Movie-review",
+    link: "https://frontend-app.janhvi08.repl.co/index.html"
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Memories App",
+    description: "The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives, it uses MERN stack",
+    image: "/memories.png",
+    github: "https://github.com/janhvi08/memories-App",
+    link:""
   },
   {
-    name: "Kator Family Photos",
+    name: "Keeping Notes",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "It is a simple To do App which is built using Nextjs.",
+    image: "/to-do.png",
+    github: " fontend - https://github.com/janhvi08/todo-app-frontend <br> backend - https://github.com/janhvi08/todo-app-backend",
+    link: "https://heroic-pika-900b36.netlify.app/",
   },
 ]
 
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
-                    <Link href={project.link}>
+                    <Link href={project.github}>
                       <Image
                         src={project.image}
                         alt=""
